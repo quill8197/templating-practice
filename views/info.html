@@ -11,10 +11,17 @@
 
     <p>The circumference of my circle is a number... {{ (2 * pi() * @radius) }}</p>
 
-    <h2>My Favorite Fruits</h2>
+    <h2>My Favorite Fruits: </h2>
     <ul>
         <repeat group="{{ @fruits }}" value="{{ @fruit }}">
-            <li>{{ @fruit }}</li>
+            <li>{{ trim(@fruit) }}</li>
+        </repeat>
+    </ul>
+
+    <h2>My Bookmarks: </h2>
+    <ul>
+        <repeat group="{{ @bookmarks }}" value="{{ @bookmark }}">
+            <li><a href="{{ @bookmark }}"> {{ str_replace('http://', '', @bookmark) }}</a></li>
         </repeat>
     </ul>
 

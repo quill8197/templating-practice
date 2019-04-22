@@ -26,8 +26,16 @@
         $f3->set('title', 'Practicing with Templates');
         $f3->set('temp', 67);
         $f3->set('radius', 10);
+
         $fruits = array('apple', 'banana', 'orange');
         $f3->set('fruits', $fruits);
+
+        //practice version a
+        $f3->set('bookmarks', array(
+            'http://www.cnet.com',
+            'http://www.reddit.com/r/news',
+            'http://edition.cnn.com/sport'
+        ));
 
         $view = new Template();
         echo $view->render('views/info.html');
