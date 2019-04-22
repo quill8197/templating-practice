@@ -44,6 +44,13 @@
             'CNN' => 'http://www.cnet.com'
         ));
 
+        //practice desserts
+        $f3->set('desserts', array(
+            'chocolate' => 'Chocolate Mousse',
+            'vanilla' => 'Vanilla Custard',
+            'strawberry' => 'Strawberry Shortcake'
+        ));
+
         $view = new Template();
         echo $view->render('views/info.html');
     });

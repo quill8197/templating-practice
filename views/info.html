@@ -32,10 +32,10 @@
         </repeat>
     </ul>
 
-    <h2>My URLs v2: </h2>
+    <h2>Dessert Options</h2>
     <ul>
-        <repeat group="{{ @urls }}" value="{{ @name=>@url }}">
-            <li><a href="{{ @url }}"> {{ @name }}</a></li>
+        <repeat group="{{ @desserts }}" value="{{ @name=>@dessert }}">
+            <input type="checkbox" value="{{ @name }}">{{ @dessert }}<br>
         </repeat>
     </ul>
 
