@@ -34,8 +34,8 @@
 
     <h2>Dessert Options</h2>
     <ul>
-        <repeat group="{{ @desserts }}" value="{{ @name=>@dessert }}">
-            <input type="checkbox" value="{{ @name }}">{{ @dessert }}<br>
+        <repeat group="{{ @desserts }}" value="{{ @key=>@value }}">
+            <input type="checkbox" value="{{ @key }}">{{ @value }}<br>
         </repeat>
     </ul>
 
