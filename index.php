@@ -37,6 +37,13 @@
             'http://edition.cnn.com/sport'
         ));
 
+        //practice version b
+        $f3->set('urls', array(
+            'Zoo' => 'http://www.zoo.org',
+            'Green River' => 'http://www.greenriver.edu',
+            'CNN' => 'http://www.cnet.com'
+        ));
+
         $view = new Template();
         echo $view->render('views/info.html');
     });

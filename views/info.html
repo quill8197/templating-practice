@@ -25,5 +25,12 @@
         </repeat>
     </ul>
 
+    <h2>My URLs: </h2>
+    <ul>
+        <repeat group="{{ @urls }}" key="{{ @name }}" value="{{ @url }}">
+            <li><a href="{{ @url }}"> {{ @name }}</a></li>
+        </repeat>
+    </ul>
+
 </body>
 </html>
