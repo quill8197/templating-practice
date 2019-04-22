@@ -24,6 +24,11 @@
     {
         //set a F3 variable
         $f3->set('title', 'Practicing with Templates');
+        $f3->set('temp', 67);
+        $f3->set('radius', 10);
+        $fruits = array('apple', 'banana', 'orange');
+        $f3->set('fruits', $fruits);
+
         $view = new Template();
         echo $view->render('views/info.html');
     });
