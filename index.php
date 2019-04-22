@@ -24,7 +24,7 @@
     {
         //set a F3 variable
         $f3->set('title', 'Practicing with Templates');
-        $f3->set('temp', 67);
+        $f3->set('temp', 58);
         $f3->set('radius', 10);
 
         $fruits = array('apple', 'banana', 'orange');

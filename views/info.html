@@ -6,8 +6,13 @@
 </head>
 <body>
     <h1>{{ @title }}</h1>
-    <p>The temperature is {{ @temp }} degrees F</p>
-    <p>and {{ round((@temp-32) * (5.0/9.0), 2) }} degrees C.</p>
+    <p>The temperature is {{ @temp }} degrees F which is equivalent to
+        {{ round((@temp-32) * (5.0/9.0), 2) }} degrees C.</p>
+
+    <check if="{{ @temp >= 60 }}">
+        <true><p>It's warm!</p></true>
+        <false><p>It's cold!</p></false>
+    </check>
 
     <p>The circumference of my circle is a number... {{ (2 * pi() * @radius) }}</p>
 
